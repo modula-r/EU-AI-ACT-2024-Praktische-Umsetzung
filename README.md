@@ -2,7 +2,7 @@
 In diesem Repository behandeln wir eine praktische Umsetzung, innerhalb einer bild-generativen Arbeitsumgebung via ComfyUI. 
 
 
-📄 Executive Summary
+## 📄 Executive Summary
 
 Die rasante Verbreitung generativer KI‑Systeme wie Stable Diffusion eröffnet enorme kreative und wirtschaftliche Potenziale. Gleichzeitig entstehen neue Herausforderungen im Hinblick auf Transparenz, Verantwortung und rechtliche Konformität – insbesondere durch die Vorgaben des europäischen AI Act 2024.
 
@@ -10,9 +10,9 @@ modula‑r | Audit Blueprint adressiert genau diese Lücke: Es ist ein modulares
 
 Dieses Repository soll zeigen, wie mit speziell entwickelten Audit‑Nodes (z. B. PromptComplianceCheckerNode, LoRAContextCaptureNode, MetaWatermarkNode) ein vollständiger Nachweis der Modell‑, Prompt‑ und LoRA‑Verwendung geführt werden kann – verschlüsselt, hash‑verkettet und nachvollziehbar dokumentiert. So entsteht ein Werkzeugkasten, der kleine Teams wie auch größere Organisationen dabei unterstützt, die Anforderungen des AI Act 2024 und künftiger Regulierungen zu erfüllen – frei von Drittanbieter‑Bindungen und mit höchstem Anspruch an Integrität und Datenschutz.
 
+--------------------------------
 
-
-2️⃣ Problemstellung & Motivation
+## 2️⃣ Problemstellung & Motivation
 
 Mit dem Aufkommen leistungsfähiger Bild‑ und Medien‑KI wie Stable Diffusion hat sich die kreative Arbeit demokratisiert – jeder kann heute KI‑Modelle einsetzen, kombinieren oder erweitern. Doch mit dieser Freiheit wächst auch die Verantwortung:
 
@@ -34,17 +34,19 @@ modula‑r | Audit Blueprint setzt genau hier an:
 Anstatt Kontrolle als externen Prozess zu verstehen, wird Audit‑Fähigkeit von Anfang an in die KI‑Pipeline integriert.
 So entstehen nicht nur sichere Logs und Wasserzeichen, sondern ein grundlegendes „White‑Hat‑Framework“: für verantwortungsvolle KI‑Nutzung, dokumentierte Prozesse und echte AI‑Act‑Compliance – ohne dass dies die kreative Freiheit einschränkt.
 
+--------------------------------
 
-
-3️⃣ Lösung & Architektur
+## 3️⃣ Lösung & Architektur
 
 Der modula‑r | Audit Blueprint ist ein modular aufgebautes Framework, das nahtlos in bestehende ComfyUI‑Workflows integriert wird. Sein Kernansatz: Audit‑Fähigkeit wird nicht nachträglich aufgesetzt, sondern als Bestandteil der kreativen Pipeline mitgedacht.
+
+[→ Compliance-Matrix, Abschn. 1] https://github.com/modula-r/EU-AI-ACT-Praktische-Umsetzung/blob/main/COMPLIANCE_MATRIX.md
 
 Die Lösung besteht aus vier zentralen Bausteinen:
 
 
 
-🟩 3.1 Audit‑Nodes & Logging
+### 🟩 3.1 Audit‑Nodes & Logging
 
 Speziell entwickelte Nodes wie:
 
@@ -69,7 +71,7 @@ Die Daten werden verschlüsselt in Audit‑Logs via Hash‑Ketten abgelegt. So e
 
 
 
-🟨 3.2 Metadaten‑Wasserzeichen
+### 🟨 3.2 Metadaten‑Wasserzeichen
 
 Parallel dazu wird ein fälschungssicherer Metadaten‑Block („MetaWatermark“) direkt in die exportierten Bild‑Dateien (PNG, JPEG, ...) eingebettet:
 
@@ -83,7 +85,7 @@ Damit ist auch ohne Zugriff auf Logs ein direkter Nachweis im Bild enthalten, we
 
 
 
-🟦 3.3 Prüfroutinen & Frontend
+### 🟦 3.3 Prüfroutinen & Frontend
 
 Eine webbasierte Oberfläche (z. B. „Audit‑Dashboard“) erlaubt:
 
@@ -97,7 +99,7 @@ Für den Nutzer ist das Frontend rein lesend – Änderungen am Log sind technis
 
 
 
-🟥 3.4 Integrität & Compliance
+### 🟥 3.4 Integrität & Compliance
 
 Alle Logs werden AES‑verschlüsselt abgelegt. Die Prüfkette ist so aufgebaut, dass:
 
@@ -110,14 +112,14 @@ Alle Logs werden AES‑verschlüsselt abgelegt. Die Prüfkette ist so aufgebaut,
 Ergebnis:
 Ein vollständig auditierbarer, AI‑Act‑konformer Workflow – ohne die kreative Freiheit des Nutzers einzuschränken.
 
+--------------------------------
 
-
-4️⃣ Technische Details & Implementierung
+## 4️⃣ Technische Details & Implementierung
 
 Der modula‑r | Audit Blueprint verbindet bestehende KI‑Workflows mit einer robusten Compliance‑Schicht – realisiert als modulare Python‑Nodes und verschlüsseltes Logging‑System. Die Architektur ist vollständig open‑source‑fähig und so dokumentiert, dass Prüfer sie unabhängig nachvollziehen können.
 
 
-🔧 4.1 Node‑Architektur
+### 🔧 4.1 Node‑Architektur
 
 Die Audit‑Funktionalitäten sind in eigene Custom‑Nodes gekapselt:
 
@@ -132,7 +134,7 @@ Die Audit‑Funktionalitäten sind in eigene Custom‑Nodes gekapselt:
 Alle Nodes nutzen ein einheitliches Logging‑Interface, sodass Erweiterungen (z. B. weitere Prüfkriterien) einfach möglich sind.
 
 
-📦 4.2 Logging & Verschlüsselung
+### 📦 4.2 Logging & Verschlüsselung
 
 Logs werden in Echtzeit während der Inferenz geschrieben:
 
@@ -150,7 +152,7 @@ So ist sichergestellt, dass Logs weder nachträglich verändert noch eingesehen 
 <img width="1222" height="510" alt="modelaudit2" src="https://github.com/user-attachments/assets/5595ebf0-574d-4d97-9719-403c381e37ad" />
 
 
-🖼 4.3 Metadaten‑Einbettung
+### 🖼 4.3 Metadaten‑Einbettung
 
 Jede generierte Bilddatei enthält:
 
@@ -171,7 +173,7 @@ Die Metadaten werden in:
 eingebettet. So bleiben die Daten bei Weitergabe des Bildes erhalten.
 
 
-🛡 4.4 Schutz vor Manipulation
+### 🛡 4.4 Schutz vor Manipulation
 
 Mehrschichtiger Schutz:
 
@@ -184,7 +186,7 @@ Mehrschichtiger Schutz:
 - Frontend verhindert Workflow‑Start, wenn Prüfkette fehlt
 
 
-🧩 4.5 Erweiterbarkeit & Open Source
+### 🧩 4.5 Erweiterbarkeit & Open Source
 
 Modular aufgebaut: neue Nodes können dieselbe Logging‑API nutzen
 
@@ -194,9 +196,9 @@ Keine Vendor‑Lock‑Ins: entwickelt ohne Drittanbieter‑Abhängigkeit
 
 Dokumentation als Whitepaper & öffentliches Git‑Repository geplant und hier umgesetzt (laufende Updates/Versionierungen)
 
+--------------------------------
 
-
-📜 5.1 AI‑Act‑Grundanforderungen
+## 📜 5.1 AI‑Act‑Grundanforderungen
 
 Der AI Act fordert u. a.:
 
@@ -210,7 +212,7 @@ Der AI Act fordert u. a.:
 
 
 
-✅ 5.2 Umsetzung im Blueprint
+### ✅ 5.2 Umsetzung im Blueprint
 
 Vorgabe (AI Act)	Umsetzung im Blueprint
 
@@ -231,7 +233,7 @@ Vorgabe (AI Act)	Umsetzung im Blueprint
 - LRA-Shield, Revision der vorhandenen Low Rank Modelle und zertifizierten Workflows. (Opensource by modula-r.com)
 
 
-🛡 5.3 Über die reine Pflicht hinaus
+### 🛡 5.3 Über die reine Pflicht hinaus
 
 Der Blueprint geht bewusst über Mindestpflichten hinaus:
 
@@ -247,7 +249,7 @@ Der Blueprint geht bewusst über Mindestpflichten hinaus:
 
 
 
-🏷 5.4 Hinweis zu Trainingsdaten
+### 🏷 5.4 Hinweis zu Trainingsdaten
 
 Der AI Act verpflichtet zur Dokumentation der Rechtebasis der Trainingsdaten.
 
@@ -257,7 +259,7 @@ So wird die Rechtsunsicherheit transparent gemacht, Prüfer können Risiken bewe
 
 
 
-🧩 5.5 Zukunftssicherheit
+### 🧩 5.5 Zukunftssicherheit
 
 Architektur ist modular & updatefähig für künftige Regulierungen
 
@@ -265,13 +267,13 @@ Anpassbar an neue Standards (z. B. ISO/IEC 42001)
 
 Prüffähig durch externe Stellen & Audit‑APIs möglich
 
+--------------------------------
 
 
+## 6️⃣ Ausblick & gesellschaftliche Bedeutung
 
-6️⃣ Ausblick & gesellschaftliche Bedeutung
 
-
-🌍 6.1 Gesellschaftlicher Kontext
+### 🌍 6.1 Gesellschaftlicher Kontext
 
 Die rasante Verbreitung von KI-Systemen verändert unsere Welt tiefgreifend – in Wirtschaft, Kultur und Alltag. Gleichzeitig wachsen die Herausforderungen in den Bereichen Ethik, Datenschutz, Sicherheit und Urheberrecht. Hier setzt der modula‑r Audit Blueprint an:
 
@@ -282,7 +284,7 @@ Verantwortung übernehmen: Der Blueprint zeigt, wie technisch-ethische Verantwor
 Demokratische Teilhabe fördern: Offenlegung und Prüfbarkeit beugen Machtkonzentrationen vor und ermöglichen eine gerechte KI-Entwicklung.
 
 
-🔮 6.2 Technologische Perspektive
+### 🔮 6.2 Technologische Perspektive
 
 Die KI-Auditing-Landschaft entwickelt sich dynamisch weiter. Der Blueprint ist bewusst modular, erweiterbar und kompatibel mit zukünftigen Standards und Werkzeugen.
 
@@ -293,7 +295,7 @@ Automatisierte Risikoanalysen: KI-gestützte Auditassistenten könnten Risiken f
 Community-Driven Auditing: Dezentrale Prüfer-Netzwerke mit Blockchain-Sicherung sind denkbar.
 
 
-🤝 6.3 Gesellschaftliche Verantwortung
+### 🤝 6.3 Gesellschaftliche Verantwortung
 
 Der modula-r Audit Blueprint ist mehr als ein technisches Framework: Er ist Ausdruck eines White-Hat-Mindsets, das KI als Chance für alle begreift.
 
@@ -333,7 +335,7 @@ Innovationsförderung: Compliance und Transparenz sind keine Hemmnisse, sondern 
 ------------------- 
 
 
-✨ 6.4 Schlusswort
+### ✨ 6.4 Schlusswort
 
 Wir stehen am Anfang einer neuen Ära – einer Ära, in der KI-Systeme unsere Realität prägen. Mit dem modula‑r Audit Blueprint gestalten wir diese Zukunft verantwortungsbewusst, transparent und ethisch fundiert.
 
@@ -347,3 +349,21 @@ Mitwirkende dieser Verfassung:
 
 
 Vermerk 24.08.2025: Dieses Repository im allgemeinen unterliegt einer kontinuierlichen Aktualisierung/Wartung. Informationen zu Inhalten, technischen Funktionen oder weiteren Inhalten können sich in diesem Prozess ändern! Updatevermerke werden deutlich gemacht.
+
+-------------------
+
+### 🧭 7.0 Quellnachweise
+
+## Verweise intern modula-r.com
+
+- https://modula-r.com/modelaudit  (Logging eingebundener OpenSource Modelle unter Apache2.0)
+- https://modula-r.com/aiact  (Umgang/Transparenz intern EU AI-Act 2024)
+- https://modula-r.com/einblick (Workflow Beispiele und Darstellung)
+- https://modula-r.com/model_train (TTP Trainingsprotokoll modula-r.com)
+- https://modula-r.com/compliance (interne Compliance-erklärung/Verfassung modula-r.com)
+
+## Verweise extern EU AI-Act 2024
+
+- https://ai-act-law.eu/de/ (Webseitenversion des EU Textes zum AI-Act 2024)
+- https://www.bundesnetzagentur.de/DE/Fachthemen/Digitales/KI/start_ki.html (Zuständige Behörde für die BRD zur Umsetzung der Regelungen des EU AI-Act 2024)
+
