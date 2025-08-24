@@ -1,0 +1,7 @@
+{
+  "prompt": "tampered entry",
+  "model": "qwen-image",
+  "timestamp": "2025-08-24T09:26:00Z",
+  "prev_hash": "WRONG_HASH",
+  "audit_hash": "a87ff679a2f3e71d9181a67b7542122c"
+}
