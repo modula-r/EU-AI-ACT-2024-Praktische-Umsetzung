@@ -1,0 +1,7 @@
+{
+  "prompt": "test image generation",
+  "model": "qwen-image",
+  "timestamp": "2025-08-24T09:25:00Z",
+  "prev_hash": null,
+  "audit_hash": "d3b07384d113edec49eaa6238ad5ff00"
+}
