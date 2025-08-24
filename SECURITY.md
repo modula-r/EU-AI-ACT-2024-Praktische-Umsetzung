@@ -11,7 +11,7 @@ Dieses Repository enthält Audit-Komponenten für KI-Workflows, die vertrauliche
 ## Offenlegung von Sicherheitslücken
 Sicherheitslücken bitte ausschließlich über private Kanäle melden.  
 E-Mail: security@modula-r.com  
-PGP-Key: [Optional einfügen]
+PGP-Key: [optional einfügen wenn bekannt]
 
 ## Haftungsausschluss
 Die Software dient als technische Unterstützung.  
