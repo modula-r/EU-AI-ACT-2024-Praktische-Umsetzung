@@ -212,12 +212,22 @@ Der AI Act fordert u. a.:
 ✅ 5.2 Umsetzung im Blueprint
 
 Vorgabe (AI Act)	Umsetzung im Blueprint
-Modell‑ und Trainingsdaten‑Angabe	Logs & Metadaten enthalten model_filename (techn.audifizierbar), Meta-Header, LoRA‑Infos & Hinweise zu Datenrechten
-Transparenz für Endnutzer	Automatisch eingebettete AI‑Act‑Metadaten (ai_generated, Tool‑Version etc.)
-Prüfbarkeit & Protokollierung	Verkettete, verschlüsselte JSON‑Logs mit vollständiger Inferenzhistorie
-Nachvollziehbarkeit von Änderungen	prev_hash und audit_hash bilden eine unveränderbare Prüfkette
-Schutz vor Manipulation	AES‑256‑Verschlüsselung & Prüfroutinen im Workflow
-Kennzeichnung KI‑Inhalt	Expliziter Metadaten‑Tag + optionaler visueller Wasserzeichen‑Layer  
+
+- Modell‑ und Trainingsdaten‑Angabe
+
+- Logs & Metadaten enthalten model_filename (techn.audifizierbar), Meta-Header, LoRA‑Infos & Hinweise zu Datenrechten
+
+- Transparenz für Endnutzer	Automatisch eingebettete AI‑Act‑Metadaten (ai_generated, Tool‑Version etc.).
+
+- Prüfbarkeit & Protokollierung	Verkettete, verschlüsselte JSON‑Logs mit vollständiger Inferenzhistorie.
+
+- Nachvollziehbarkeit von Änderungen	prev_hash und audit_hash bilden eine unveränderbare Prüfkette.
+
+- Schutz vor Manipulation	AES‑256‑Verschlüsselung & Prüfroutinen im Workflow.
+
+- Kennzeichnung KI‑Inhalt	Expliziter Metadaten‑Tag + optionaler visueller Wasserzeichen‑Layer. (modula-r.com LogoInformer.json)
+
+- LRA-Shield, Revision der vorhandenen Low Rank Modelle und zertifizierten Workflows. (Opensource by modula-r.com)
 
 
 🛡 5.3 Über die reine Pflicht hinaus
