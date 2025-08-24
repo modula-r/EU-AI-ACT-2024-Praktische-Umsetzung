@@ -1,0 +1,16 @@
+[
+  {
+    "prompt": "test image generation",
+    "model": "SDXL_v1.0",
+    "timestamp": "2025-08-24T09:25:00Z",
+    "prev_hash": null,
+    "audit_hash": "a501ceabb33f66a6f100ea822e22d469e315a3e53e0e8665d88b8a0d46197ece"
+  },
+  {
+    "prompt": "second entry",
+    "model": "SDXL_v1.0",
+    "timestamp": "2025-08-24T09:26:00Z",
+    "prev_hash": "WRONG_HASH",
+    "audit_hash": "64424657d4573c130d9ed8f768a0db3b935542d1aeee9c9eea38c91a25865fae"
+  }
+]
