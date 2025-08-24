@@ -37,6 +37,7 @@ So entstehen nicht nur sichere Logs und Wasserzeichen, sondern ein grundlegendes
 
 
 3️⃣ Lösung & Architektur
+
 Der modula‑r | Audit Blueprint ist ein modular aufgebautes Framework, das nahtlos in bestehende ComfyUI‑Workflows integriert wird. Sein Kernansatz: Audit‑Fähigkeit wird nicht nachträglich aufgesetzt, sondern als Bestandteil der kreativen Pipeline mitgedacht.
 
 Die Lösung besteht aus vier zentralen Bausteinen:
