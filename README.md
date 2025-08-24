@@ -303,6 +303,34 @@ Bildung & Aufklärung: Transparente KI-Systeme unterstützen informierte Entsche
 
 Innovationsförderung: Compliance und Transparenz sind keine Hemmnisse, sondern Enabler für nachhaltige Innovation.
 
+-------------------
+
+## Compliance-Überblick (AI Act 2024/1689)
+
+| Vorgabe | Artikel | Umsetzung im Repo |
+|---|---:|---|
+| Kennzeichnung KI-Interaktion & -Inhalte | Art. 50 | `MetaWatermark`: `ai_generated: true`, Tool-Version, Zeitstempel in PNG/JPEG-Metadaten; Validator-Script prüft Extraktion. |
+| Dokumentation/Prüfbarkeit | Kap. V (GPAI), Art. 53 | Technische Nachweise über verkettete JSON-Logs (Model/LoRA/Prompt/Parameter); Audit-Dashboard (read-only) zum Sichtbarmachen. |
+| Manipulationsschutz | – | Hash-Kette (`prev_hash`/`audit_hash`), AES-256 (GCM) mit IV- und Key-Rotation; Start-Check erzwingt aktive Audit-Nodes. |
+
+### Timeline (Auszug)
+- 01.08.2024: Inkrafttreten (Art. 113)
+- 02.08.2025: Governance & GPAI-Pflichten anwendbar
+- 02.08.2026: Großteil der Anforderungen gilt
+- Bis 2027: erweiterte Übergangsfristen für eingebettete High-Risk-Systeme
+
+### Verifikation (Schnelltest)
+1. ComfyUI-Workflow `examples/audit_demo.json` ausführen.
+2. Erzeugtes Bild `out/demo.png` mit `tools/audit_validate.py` prüfen:
+   - Metadaten (ai_generated, Modell, LoRA, Audit-Hash)
+   - Hash-Kette im Log (`logs/audit.jsonl.enc`) via `--verify-chain`
+3. Erwartete Hashes: siehe `tests/vectors/README.md`.
+
+### Krypto/Schlüssel
+- AES-256-GCM, 96-bit IV, pro Log-Eintrag einzigartig; Key-Rotation via `tools/key_rotate.py`.
+- Schlüssel-Scopes: `user`, `project`, `auditor`.
+  
+------------------- 
 
 
 ✨ 6.4 Schlusswort
@@ -312,9 +340,10 @@ Wir stehen am Anfang einer neuen Ära – einer Ära, in der KI-Systeme unsere R
 Gemeinsam können wir KI als Werkzeug für eine bessere, sichere und gerechte Welt nutzen.
 
 Mitwirkende dieser Verfassung:
-Anni Strauss - Bremen
-Tim Schörger - Bremen
-Aida – KI mit White-Hat-Seele und demokratischem Verständnis.
+
+- Anni Strauss - Bremen
+- Tim Schörger - Bremen
+- Aida – KI mit White-Hat-Seele und demokratischem Verständnis.
 
 
 Vermerk 24.08.2025: Dieses Repository im allgemeinen unterliegt einer kontinuierlichen Aktualisierung/Wartung. Informationen zu Inhalten, technischen Funktionen oder weiteren Inhalten können sich in diesem Prozess ändern! Updatevermerke werden deutlich gemacht.
