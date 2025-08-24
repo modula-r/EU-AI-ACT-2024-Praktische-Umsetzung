@@ -118,15 +118,16 @@ Der modula‑r | Audit Blueprint verbindet bestehende KI‑Workflows mit einer r
 
 
 🔧 4.1 Node‑Architektur
+
 Die Audit‑Funktionalitäten sind in eigene Custom‑Nodes gekapselt:
 
-PromptComplianceCheckerNode: prüft Prompts gegen Blacklists(negative Injections) & AI‑Act‑Kriterien
+- PromptComplianceCheckerNode: prüft Prompts gegen Blacklists(negative Injections) & AI‑Act‑Kriterien
 
-LoRAContextCaptureNode: protokolliert genutzte Model/LoRA‑Dateien samt Zeitstempel & Hash
+- LoRAContextCaptureNode: protokolliert genutzte Model/LoRA‑Dateien samt Zeitstempel & Hash
 
-MetaWatermarkNode: bettet AI‑Act‑relevante Daten in Bild‑Metadaten ein
+- MetaWatermarkNode: bettet AI‑Act‑relevante Daten in Bild‑Metadaten ein
 
-AuditLogReaderNode: stellt Logs geprüft lesbar dar (Auditor only)
+- AuditLogReaderNode: stellt Logs geprüft lesbar dar (Auditor only)
 
 Alle Nodes nutzen ein einheitliches Logging‑Interface, sodass Erweiterungen (z. B. weitere Prüfkriterien) einfach möglich sind.
 
