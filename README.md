@@ -16,7 +16,9 @@ Dieses Repository soll zeigen, wie mit speziell entwickelten Audit‑Nodes (z.�
 
 Mit dem Aufkommen leistungsfähiger Bild‑ und Medien‑KI wie Stable Diffusion hat sich die kreative Arbeit demokratisiert – jeder kann heute KI‑Modelle einsetzen, kombinieren oder erweitern. Doch mit dieser Freiheit wächst auch die Verantwortung:
 
-Transparenzpflichten sind je nach Einstufung des AI Act 2024 einzuhalten und müssen genau dokumentieren, welche Modelle, LoRAs, Prompts und Parameter verwendet wurden.
+Transparenzpflichten sind je nach Einstufung des AI Act 2024 einzuhalten und müssen genau dokumentieren, welche Modelle, Systeme und spezifische Daten verwendet wurden.
+
+Für Hersteller gelten differenzierte Pflichten zu denen von Betreibern. Geschuldet der teils verschlossenen Architektur von generativen Systemen, ist oftmals nicht auf den ersten Blick klar, welche konkrete Eingliederung nun zutrifft.
 
 Rechtskonformität erfordert, dass Urheberrechte, Lizenzbedingungen und Haftungsfragen jederzeit überprüfbar sind.
 
