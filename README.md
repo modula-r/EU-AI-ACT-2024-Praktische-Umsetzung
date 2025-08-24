@@ -323,17 +323,6 @@ Innovationsförderung: Compliance und Transparenz sind keine Hemmnisse, sondern 
 - 02.08.2026: Großteil der Anforderungen gilt
 - Bis 2027: erweiterte Übergangsfristen für eingebettete High-Risk-Systeme
 
-### Verifikation (Schnelltest)
-1. ComfyUI-Workflow `examples/audit_demo.json` ausführen.
-2. Erzeugtes Bild `out/demo.png` mit `tools/audit_validate.py` prüfen:
-   - Metadaten (ai_generated, Modell, LoRA, Audit-Hash)
-   - Hash-Kette im Log (`logs/audit.jsonl.enc`) via `--verify-chain`
-3. Erwartete Hashes: siehe `tests/vectors/README.md`.
-
-### Krypto/Schlüssel
-- AES-256-GCM, 96-bit IV, pro Log-Eintrag einzigartig; Key-Rotation via `tools/key_rotate.py`.
-- Schlüssel-Scopes: `user`, `project`, `auditor`.
-  
 ------------------- 
 
 
