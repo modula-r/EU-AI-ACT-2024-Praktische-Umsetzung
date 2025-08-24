@@ -16,3 +16,6 @@ PGP-Key: [optional einfügen wenn bekannt]
 ## Haftungsausschluss
 Die Software dient als technische Unterstützung.  
 Für rechtskonforme Gesamtprozesse ist eine ergänzende organisatorische und juristische Prüfung erforderlich.
+
+## Verantwortlichkeit bei Schlüsselzugriff
+Der AES-Key verbleibt auf dem Endanwendergerät/im System und wird nicht mit versioniertem Code geteilt.
