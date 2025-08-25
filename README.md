@@ -136,6 +136,10 @@ Die Audit‑Funktionalitäten sind in eigene Custom‑Nodes gekapselt:
 Alle Nodes nutzen ein einheitliches Logging‑Interface, sodass Erweiterungen (z. B. weitere Prüfkriterien) einfach möglich sind.
 
 
+Datasheets Nodes = https://github.com/modula-r/EU-AI-ACT-2024-Praktische-Umsetzung/tree/main/ComfyUI-live-working-nodes
+
+
+
 ### 📦 4.2 Logging & Verschlüsselung
 
 Logs werden in Echtzeit während der Inferenz geschrieben:
