@@ -5,3 +5,9 @@
 - LRA-Shield integriert
 - Validator-Skript hinzugefügt
 - Compliance-Matrix und Dokumentation erstellt
+
+## v1.0.1 – 2025-08-26
+- modula-r-Dokumentation hinzugefügt
+- Schulung_doc integriert
+- Readme.md erweitert (Ressourcen)
+- ComfyUI-live-working-nodes vervollständigt  
