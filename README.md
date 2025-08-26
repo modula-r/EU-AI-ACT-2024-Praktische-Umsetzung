@@ -11,7 +11,7 @@ Diese Dokumentation richtet sich an alle, die generative Bild-KI verstehen, eins
 |-------|------|
 | Glossar & Buzzwords (ComfyUI) | [📘 Schulungsdokumentationen](https://github.com/modula-r/EU-AI-ACT-2024-Praktische-Umsetzung/blob/main/Schulung_doc/SD_Buzzwords.md) |
 | Praktische Umsetzung: Node (PCCN)  | [🔗 EU-AI-ACT-2024-PromptComplianceCheckerNode](https://github.com/modula-r/EU-AI-ACT-2024-Praktische-Umsetzung/blob/main/ComfyUI-live-working-nodes/PromptComplianceCheckerNode%20Datenblatt.md) |
-| Offizielle Papers modula-r.com  | [🔗 EU-AI-ACT-2024-Whitepaper PDF](https://github.com/modula-r/EU-AI-ACT-2024-Praktische-Umsetzung/blob/main/modula-r-Dokumentationen/Whitepaper%202025.pdf) |
+| **Offizielle modula‑r Whitepaper (PDF)** – für tiefgehende Fachinformationen und Grundlagenwissen.  | [🔗 EU-AI-ACT-2024-Whitepaper PDF](https://github.com/modula-r/EU-AI-ACT-2024-Praktische-Umsetzung/blob/main/modula-r-Dokumentationen/Whitepaper%202025.pdf) |
 
 ------------
 
