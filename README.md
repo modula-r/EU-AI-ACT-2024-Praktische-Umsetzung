@@ -1,6 +1,18 @@
 # EU-AI-ACT-Praktische-Umsetzung
 In diesem Repository behandeln wir eine praktische Umsetzung, innerhalb einer bild-generativen Arbeitsumgebung via ComfyUI. 
 
+-------------
+
+## 📎 Ressourcen für Entscheider:innen, Kreative und KI-Expert:innen
+
+Diese Dokumentation richtet sich an alle, die generative Bild-KI verstehen, einsetzen oder strategisch bewerten möchten – ob im Management, der künstlerischen Praxis oder der technischen Umsetzung.
+
+| Thema | Link |
+|-------|------|
+| Glossar & Buzzwords (ComfyUI) | [📘 Schulungsdokumentationen](https://github.com/modula-r/EU-AI-ACT-2024-Praktische-Umsetzung/blob/main/Schulung_doc/SD_Buzzwords.md) |
+| Praktische Umsetzung: Node (PCCN)  | [🔗 EU-AI-ACT-2024-PromptComplianceCheckerNode](https://github.com/modula-r/EU-AI-ACT-2024-Praktische-Umsetzung/blob/main/ComfyUI-live-working-nodes/PromptComplianceCheckerNode%20Datenblatt.md) |
+
+------------
 
 ## 📄 Executive Summary
 
