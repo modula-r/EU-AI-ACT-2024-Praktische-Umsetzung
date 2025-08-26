@@ -112,8 +112,4 @@ Dieses Glossar steht unter der **[MIT-Lizenz](LICENSE)** – frei zur Nutzung, M
 
 ---
 
-## 🧷 Optional: Badges (für Repositories)
 
-```markdown
-![MIT License](https://img.shields.io/badge/License-MIT-green.svg)
-![Status: Work in Progress](https://img.shields.io/badge/status-in_progress-yellow)
