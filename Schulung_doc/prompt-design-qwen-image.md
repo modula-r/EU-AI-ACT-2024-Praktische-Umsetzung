@@ -85,6 +85,7 @@ Background softly blurred (bokeh), other passengers in light motion blur, HDR re
 
 **Negativer Prompt**
 
+cartoon, anime, CGI, plastic skin, bad anatomy, distorted hands, unreadable text, misspelled words, blurry sign, overexposed light, low detail, unrealistic proportions
 
 ---
 
