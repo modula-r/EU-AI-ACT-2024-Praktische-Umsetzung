@@ -10,4 +10,9 @@
 - modula-r-Dokumentation hinzugefügt
 - Schulung_doc integriert
 - Readme.md erweitert (Ressourcen)
-- ComfyUI-live-working-nodes vervollständigt  
+- ComfyUI-live-working-nodes vervollständigt
+
+## v1.0.1 – 2025-08-27
+- Schulungs-PDF Buzzwords hinzugefügt
+- Schulungunterlage (.md) Prompting Qwen-image
+
