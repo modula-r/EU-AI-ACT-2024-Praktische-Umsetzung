@@ -17,6 +17,10 @@ Outputs für kommerzielle und persönliche Zwecke.
 
 ---
 
+
+# 1. Allgemeines Prompting (qwen-image)
+
+
 ## Prompt 1 – Edle Tasse
 **Ziel:** Fotorealistische Produktfotografie – Wassertropfen, Tasse, Stein, Inschrift.
 
@@ -96,6 +100,83 @@ cartoon, anime, CGI, plastic skin, bad anatomy, distorted hands, unreadable text
 4. **Negativ-Prompt** – gezielt Artefakte, CGI-Look und fehlerhafte Textdarstellung ausschließen.  
 
 ---
+
+
+# 2. Entwicklung syntaktischer Anweisungen (qwen-image)
+
+
+## Prompt Evolution Qwen-Image 
+
+Qwen-image ist in vielerlei Hinsicht anders zu behandeln, als Modelle mit Textencodern, welche sich über Monate und Jahre schon etabliert haben.
+Zum Beispiel ist das Textverständnis in "gängigen" Prompts ein diskret anderes. Wir behandeln die Beispiele als Grundlage für die 
+Interpretation der Generationsanweisung. Z.B:
+
+**Qwen-Image interpretiert „shot with…“ (camera) oder Kameraspezifikationen als physische Objekte oder Schrift im Bild. Ebenso wird die Standard-Personendarstellung oft asiatisch.**
+
+Erstmal kein Problem. Im Falle einer gezielten Generation, welche einer Deadline im gewissen Sinne unterliegt, allerdings schon. Sehen wir uns die Evolution der Generationsanweisung einmal 
+genauer an. 
+
+Gewünscht ist ein Output mit folgender Anweisung:
+
+**Prompt**: High-end editorial photograph, documentary style, 8k resolution, HDR,  
+a young businesswoman (30), natural look, slight smile, confident posture,  
+standing in a modern loft kitchen with morning sunlight streaming through large windows,  
+soft shadows, light dust particles in air, authentic and candid moment,  
+wearing a tailored blazer, white blouse, minimal jewelry, casual yet professional style,  
+shot with Leica SL2 + Summilux 50mm f/1.4, cinematic depth of field,  
+magazine-ready composition, premium lifestyle photography.
+
+Dies ist bei 55 Steps und einem Seed von 795799441902684, das Produkt:
+
+
+![Prompt 3 – Person am Bahnsteig](images/prompt_evolution1.png)
+
+
+Deutlich zu sehen, das im Spülbecken etwas wegspritzt. Nun, das ist wohl dem "shot..." zu verdanken.
+Der Herd in der rechten Bildhälfte hat das Logo von Leica repräsentativ eingebettet. 
+Da hat Qwen also, in ihrer Funktion als texttrainiertes Modell, etwas falsch interpretiert. Oder es lag an
+der Art der Promptausformung.
+
+
+Starten wir also den nächsten Versuch. Diesmal lautet die Anweisung:
+
+**Prompt**: High-end editorial photograph, ultra-realistic, 8k, HDR,  
+Caucasian woman, 30 years old, fair skin, long blonde hair, natural makeup, slight smile, confident yet casual pose,  
+standing in a modern loft kitchen, warm morning sunlight entering through large windows, soft shadows and natural contrast,  
+authentic lifestyle scene, elegant wardrobe: tailored blazer, white blouse, subtle jewelry,  
+premium magazine aesthetic, professional photography look, cinematic depth of field, realistic colors, no text, no logos.
+
+Dies ist wieder bei 55 Steps und einem Seed von 795799441902684, das Produkt:
+
+
+![Prompt 3 – Person am Bahnsteig](images/prompt_evolution2.png)
+
+
+Schon etwas gezielter und semantisch präziser umgesetzt. Nur wer hat in seiner Küche zwei separate Spülbecken?
+Und die Person ist auch etwas zu sehr "gefiltert". Das geht bedeutend besser.
+
+Sehen wir uns die finale Anweisung an. Nun haben wir die Küche ausgetauscht gegen eine moderne und junge Agentur.
+Aber immer noch im Kontext, des ursprünglichen Promptes.
+
+Dies ist wieder bei 55 Steps und einem Seed von 795799441902684, das Produkt:
+
+
+![Prompt 3 – Person am Bahnsteig](images/prompt_evolution3.png)
+
+
+Hier stimmt die Umsetzung zu 98%. Das kann so in die Nachbearbeitung und für den Export vorbereitet werden.
+
+Generierte Outputs sind und bleiben immer RAW-Dateien, welche im professionellen Einsatz eine Nachbearbeitung
+(Entwicklung) benötigen. Denn ein Output kann technisch betrachtet immer nur eine Wahrscheinlichkeit an der Wahrheit sein.
+Egal wie gut oder hochwertig ein Output zunächst wirken mag. 
+
+Mehr Informationen zu diesem Aspekt:
+
+[Warum Stable Diffusion nicht "perfect on demand" sein kann🛡️](https://modula-r.com/generierung)
+
+
+---
+
 
 ## Hinweis zur Nutzung
 Diese Prompts wurden für das Modell **Qwen-Image fp8** erstellt.  
