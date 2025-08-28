@@ -16,3 +16,6 @@
 - Schulungs-PDF Buzzwords hinzugefügt
 - Schulungunterlage (.md) Prompting Qwen-image
 
+## v1.0.1 – 2025-08-28
+- Beispielbilder in Verzeichnis **images** hinzugefügt
+- Schulungsunterlage **prompt-design-qwen-image.md** um Teil 2 ergänzt.
