@@ -43,6 +43,12 @@ Die Prompt_Storage_Node bietet dabei folgende Funktionen.
 
 ---
 
+## Produktionstypischer modula-r Workflow mit Prompt_Storage_Stock Funktion
+
+<img width="2577" height="1549" alt="Stock_storage_Workflow" src="https://github.com/user-attachments/assets/b2878f87-1ef1-4d42-aa54-5c9c84982c82" />
+
+---
+
 Nachfolgend einige Outputs aus der aktuell verfügbaren Bibliothek.
 Diese Generationen unterliegen der Apache2.0 Lizenz und innerhalb dieser Lizenz frei nutzbar.
 
