@@ -19,3 +19,6 @@
 ## v1.0.1 – 2025-08-28
 - Beispielbilder in Verzeichnis **images** hinzugefügt
 - Schulungsunterlage **prompt-design-qwen-image.md** um Teil 2 ergänzt.
+
+## v1.0.1 – 2025-08-30
+- Audit_Stock hinzugefügt. (Stock Bibliothek für qwen-image Workflow)
