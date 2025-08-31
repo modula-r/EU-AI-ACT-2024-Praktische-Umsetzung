@@ -77,4 +77,4 @@ Diese Generationen unterliegen der Apache2.0 Lizenz und innerhalb dieser Lizenz 
 
 Diese Funktion wird fortlaufend weiterentwickelt und gepflegt. Ein Upgrade der Node wird in Kürze verfügbar sein.
 
-Hier geht es zum Respority: [ComfyUI-QwenImage-PromptStorage-Node](https://github.com/modula-r/ComfyUI-QwenImage-PromptStorage-Node)
+Hier geht es zum Repository: [ComfyUI-QwenImage-PromptStorage-Node](https://github.com/modula-r/ComfyUI-QwenImage-PromptStorage-Node)
