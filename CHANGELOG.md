@@ -22,3 +22,6 @@
 
 ## v1.0.1 – 2025-08-30
 - Audit_Stock hinzugefügt. (Stock Bibliothek für qwen-image Workflow)
+
+## v1.0.2 – 2025-08-31
+- DSGVO-Compliance hinzugefügt (Prüfroutinen innerhalb der Pipeline) 
