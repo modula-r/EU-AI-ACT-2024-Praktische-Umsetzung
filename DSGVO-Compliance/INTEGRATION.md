@@ -135,10 +135,9 @@ Hier wurde ein Begriff innerhalb des Prompts ausgewertet, welcher über die AI-A
 Diese Blacklist hat die Aufgabe, das Generieren von zb. Deepfakes, besonders kritsche Inhalte, sensible Inhalte, gewaltverherlichende Inhalte etc. auszuschließen.
 
 Ehe es zu einer Generation kommt und mögliche entsprechende Daten erzeugt werden könnten, geht hier die Prüfroutine auf den Exceptionzustand und bricht den Run (die Generation)
-
 innerhalb der Pipeline ab. So haben Anwendente die Möglichkeit den Prompt umzugestalten oder erneut zu prüfen. Der gefundene Begriff wird mitgeteilt.
 
-Der Logeintrag ist dann produktionstypischer entsprechend verfasst:
+Der Logeintrag ist dann produktionstypisch, entsprechend verfasst:
 
 
 ```json
