@@ -132,7 +132,7 @@ Im Log wurde es eindeutig hinterlegt:
 
 Hier wurde ein Begriff innerhalb des Prompts ausgewertet, welcher über die AI-Act relevante Blacklist ermittelt wurde.
 
-Diese Blacklist hat die Aufgabe, das Generieren von zb. Deepfakes, besonders kritsche Inhalte, sensible Inhalte, gewaltverherlichende Inhalte etc. auszuschließen.
+Diese Blacklist hat die Aufgabe, das Generieren von zb. Deepfakes, besonders kritsche Inhalte, sensible Inhalte, gewaltverherrlichende Inhalte etc. auszuschließen.
 
 Ehe es zu einer Generation kommt und mögliche entsprechende Daten erzeugt werden könnten, geht hier die Prüfroutine auf den Exceptionzustand und bricht den Run (die Generation)
 innerhalb der Pipeline ab. So haben Anwendente die Möglichkeit den Prompt umzugestalten oder erneut zu prüfen. Der gefundene Begriff wird mitgeteilt.
