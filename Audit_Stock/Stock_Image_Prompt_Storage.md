@@ -4,7 +4,7 @@
 ## Stockbilder aus dem Generator
 
 Für professionelle Anwendungen innerhalb einer produktiven Umgebung kann es sehr nutzvoll sein, immer wieder verwendete Stockelemente griffbereit zu haben.
-Diese Funktion ermöglicht es innerhelb eines ComfyUI Workflow, über eine gepflegte Bibliothek, benötigte Inhalte immer auf Abfrage gezielt zu generieren, statt
+Diese Funktion ermöglicht es innerhalb eines ComfyUI Workflow, über eine gepflegte Bibliothek, benötigte Inhalte immer auf Abfrage gezielt zu generieren, statt
 sie mühsam selektieren und zusammenstellen zu müssen.
 
 Ein weiterer Vorteil besteht darin, das sämtliche Prompts schon geprüft und audifiziert im Storagefile gelagert sind.
