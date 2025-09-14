@@ -73,16 +73,13 @@ plastic textures, oversaturated colors, text artifacts, grainy image
 **Ziel:** Editorial Photography – Professionelle Personendarstellung + Text im Rahmen.
 
 **Beispielbild:**  
-![Prompt 3 – Person am Bahnsteig](images/prompt3_person_bahnsteig.png)
+![Prompt 3 – Person am Bahnsteig](images/rendered_eyes.png)
 
 **Positiver Prompt**
 
 Ultra-realistic documentary-style photograph, premium editorial quality, captured with Canon EOS R5, RF 50mm f/1.2L lens, aperture f/2.8, ISO 200, shutter 1/500s, natural light.
 
-A 30-year-old woman stands on an older subway station platform, train not yet arrived. She looks confidently yet slightly carefree toward the viewer, 
-long blonde hair with natural highlights, realistic skin texture, soft cinematic lighting. Outfit: bootcut blue jeans with colorful belt buckle, white collared shirt with sleeves rolled up. 
-She holds a picture frame-style sign (85%), perfectly straight, centered in frame, OR slightly tilted for natural handheld effect (15%). Inside frame: sharp, clean sans-serif text, 
-perfectly legible: "Bist Du bereit für EU AI-Act?". 
+promptA 30-year-old woman stands on an older subway station platform, train not yet arrived. She looks confidently yet slightly carefree toward the viewer, long black hair with natural highlights, dark brown eyes, extra beautiful eyes, realistic skin texture, soft cinematic lighting. Outfit: bootcut blue jeans with colorful belt buckle, white collared shirt with sleeves rolled up. She holds a picture frame-style sign (85%), perfectly straight, centered in frame, OR slightly tilted for natural handheld effect (15%). Inside frame: sharp, clean sans-serif text, perfectly legible: "Bist Du bereit für EU AI-Act?".
 
 Background softly blurred (bokeh), other passengers in light motion blur, HDR rendering, 8k resolution, high-end magazine photo aesthetic, natural color grading, realistic lens effects.
 
